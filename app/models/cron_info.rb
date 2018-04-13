@@ -1,3 +1,3 @@
 class CronInfo < ApplicationRecord
-  belongs_to :stok
+  belongs_to :stock
 end

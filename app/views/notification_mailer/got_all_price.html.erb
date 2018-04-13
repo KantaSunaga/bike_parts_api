@@ -1,0 +1,10 @@
+<% @rank_info.each do |r|%>
+  <strong>品名: <%= r[0]%></strong>
+  <ol>
+    <% r[1].each do |c|%>
+      <li>
+        <%= link_to "#{c.stock.shop_name }¥#{c.price}", "#{c.stock.url}" %>
+      </li>
+    <% end %>
+  </ol>
+<% end %>

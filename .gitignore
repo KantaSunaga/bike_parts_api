@@ -18,3 +18,4 @@
 
 db/seeds.rb
 .DS_Store
+config/initializers/mail.rb

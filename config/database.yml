@@ -50,5 +50,4 @@ test:
 production:
   <<: *default
   database: bike_parts_api_production
-  username: bike_parts_api
   password: <%= ENV['BIKE_PARTS_API_DATABASE_PASSWORD'] %>

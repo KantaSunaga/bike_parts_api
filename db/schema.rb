@@ -13,8 +13,7 @@
 ActiveRecord::Schema.define(version: 20180411222229) do
 
   create_table "cron_infos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "stok"
-    t.integer  "stok_id"
+    t.integer  "stock_id"
     t.integer  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -27,7 +26,7 @@ ActiveRecord::Schema.define(version: 20180411222229) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "stoks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "stocks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "shop_name"
     t.integer  "item_id"
     t.string   "url"
