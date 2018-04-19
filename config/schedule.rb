@@ -6,9 +6,7 @@ set :development, :production
 every :hour do
   runner 'Stock.catch_and_save_all_price'
 end
-#
-# every 4.days do
-#   runner "AnotherModel.prune_old_records"
-# end
 
-# Learn more: http://github.com/javan/whenever
+# every 1.minutes do
+  # runner 'Stock.catch_and_save_all_price'
+# end
